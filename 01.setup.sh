@@ -8,6 +8,8 @@ git config --global credential.helper store
 
 # timezone
 sudo timedatectl set-timezone Asia/Tokyo
+# sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
 
 # gitauto コピー
 sudo cp bin/gitauto /usr/local/bin/
