@@ -26,14 +26,14 @@ ls
 # SSLCertificateChainFile /etc/letsencrypt/live/<FQDN>/chain.pem
 # ====================================
 
-systemctl status httpd
-systemctl start httpd
-systemctl status httpd
+sudo systemctl status httpd
+sudo systemctl start httpd
+sudo systemctl status httpd
 
 
 # htmlファイル作成
 cd /var/www/html/
-cat <<EOF >index.html
+sudo tee index.html <<EOF
 <html>
   <head>
   </head>
