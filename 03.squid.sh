@@ -34,16 +34,17 @@ http_access deny all
 http_port 3128
 
 cache_mem 256 MB
-# cache_dir 3GB
-cache_dir ufs /var/spool/squid 3072 16 256
-maximum_object_size 1024 MB
+# cache_dir 5GB
+cache_dir ufs /var/spool/squid 5120 16 256
+maximum_object_size 2048 MB
 coredump_dir /var/spool/squid
 
 refresh_pattern ^ftp:           1440    20%     10080
 refresh_pattern ^gopher:        1440    0%      1440
 refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
-refresh_pattern -i \.(deb|rpm|exe|msi)$ 10080 90% 43200 override-expire ignore-no-cache ignore-no-store ignore-private
+refresh_pattern -i \.(deb|rpm|exe|msi)$ 129600 100% 129600 override-expire ignore-no-cache ignore-no-store ignore-private
+#refresh_pattern -i \.(deb|rpm|exe|msi)$ 10080 90% 43200 override-expire ignore-no-cache ignore-no-store ignore-private
 
 request_header_access Referer deny all
 request_header_access X-Forwarded-For deny all
@@ -53,9 +54,6 @@ request_header_access Cache-Control deny all
 visible_hostname unknown
 forwarded_for off
 EOF
-
-
-
 
 # 起動設定
 sudo systemctl start squid
