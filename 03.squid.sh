@@ -43,7 +43,6 @@ refresh_pattern ^ftp:           1440    20%     10080
 refresh_pattern ^gopher:        1440    0%      1440
 refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
-refresh_pattern -i \.(iso|avi|wav|mp3|mp4|mpeg|3gp|swf|flv|x-flv)$ 43200 90% 432000 override-expire ignore-no-cache ignore-no-store ignore-private
 refresh_pattern -i \.(deb|rpm|exe|msi)$ 10080 90% 43200 override-expire ignore-no-cache ignore-no-store ignore-private
 
 request_header_access Referer deny all
@@ -51,6 +50,7 @@ request_header_access X-Forwarded-For deny all
 request_header_access Via deny all
 request_header_access Cache-Control deny all
 
+visible_hostname unknown
 forwarded_for off
 EOF
 
