@@ -4,6 +4,6 @@ proxy=http://10.0.0.20:3128/
 EOF
 
 
-# env登録  amazon-linux-extrasでは必要
+# 環境変数  amazon-linux-extrasでは必要
 export HTTP_PROXY=http://10.0.0.20:3128/
 export HTTPS_PROXY=http://10.0.0.20:3128/
