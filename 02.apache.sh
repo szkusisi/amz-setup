@@ -4,7 +4,7 @@ sudo yum install -y certbot python3-certbot-apache httpd mod_ssl
 
 # Let's Encryptでワイルドカード証明書
 # 適宜修正
-certbot certonly --manual -d <FQDN> -m <MAIL> --agree-tos --manual-public-ip-logging-ok --preferred-challenges dns-01
+sudo certbot certonly --manual -d <FQDN> -m <MAIL> --agree-tos --manual-public-ip-logging-ok --preferred-challenges dns-01
 
 
 # 成功すると
