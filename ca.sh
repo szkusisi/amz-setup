@@ -4,6 +4,17 @@ https://docs.aws.amazon.com/ja_jp/vpn/latest/clientvpn-admin/client-authenticati
 https://server-setting.info/centos/openvpn-revoke-client.html#revoke
 
 
+https://server-setting.info/centos/private-ca-cert.html
+=============================================================
+sudo sed -i "s/XX$/JP/g" /etc/pki/tls/openssl.cnf
+
+sudo sed -i "s/#stateOrProvinceName_default/stateOrProvinceName_default/g" /etc/pki/tls/openssl.cnf
+sudo sed -i "s/Default Province$/Tokyo/g" /etc/pki/tls/openssl.cnf
+=============================================================
+
+
+
+
 git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
 ./easyrsa init-pki
