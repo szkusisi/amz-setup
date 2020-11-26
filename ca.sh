@@ -2,6 +2,8 @@ https://rohhie.net/certification-authority-to-make-at-company/
 https://dev.classmethod.jp/articles/manage-aws-client-vpn-client-certificates/
 https://docs.aws.amazon.com/ja_jp/vpn/latest/clientvpn-admin/client-authentication.html#mutual
 https://server-setting.info/centos/openvpn-revoke-client.html#revoke
+https://qiita.com/worldmotor/items/f81718ada1433ba9c71c
+
 
 
 https://server-setting.info/centos/private-ca-cert.html
