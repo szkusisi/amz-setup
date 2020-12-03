@@ -11,6 +11,7 @@ https://www.haproxy.com/fr/blog/ssl-client-certificate-information-in-http-heade
 
 https://server-setting.info/centos/private-ca-cert.html
 =============================================================
+sudo cp /etc/pki/tls/openssl.cnf /etc/pki/tls/openssl.cnf.org
 sudo sed -i "s/XX$/JP/g" /etc/pki/tls/openssl.cnf
 
 sudo sed -i "s/#stateOrProvinceName_default/stateOrProvinceName_default/g" /etc/pki/tls/openssl.cnf
