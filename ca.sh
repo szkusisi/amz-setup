@@ -16,6 +16,15 @@ sudo sed -i "s/XX$/JP/g" /etc/pki/tls/openssl.cnf
 
 sudo sed -i "s/#stateOrProvinceName_default/stateOrProvinceName_default/g" /etc/pki/tls/openssl.cnf
 sudo sed -i "s/Default Province$/Tokyo/g" /etc/pki/tls/openssl.cnf
+sudo sed -i "s/Default City$/Chuo/g" /etc/pki/tls/openssl.cnf
+=============================================================
+Default City
+Default Company Ltd
+
+#organizationalUnitName_default =
+organizationalUnitName_default = System Development
+
+emailAddress_default            = webmaster@example.com
 =============================================================
 
 
