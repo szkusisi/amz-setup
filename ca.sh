@@ -35,7 +35,7 @@ cp pki/ca.crt ~/aiocr.de/
 cp pki/issued/www.aiocr.de.crt ~/aiocr.de/
 cp pki/private/www.aiocr.de.key ~/aiocr.de/
 
-cp pki/issued/client1,aiocr.de.crt ~/aiocr.de
+cp pki/issued/client1.aiocr.de.crt ~/aiocr.de
 cp pki/private/client1.aiocr.de.key ~/aiocr.de/
 
 cp pki/issued/client2.aiocr.de.crt ~/aiocr.de
