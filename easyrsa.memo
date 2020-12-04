@@ -1,0 +1,27 @@
+git clone https://github.com/OpenVPN/easy-rsa.git
+cd easy-rsa/easyrsa3
+./easyrsa init-pki
+./easyrsa build-ca nopass
+
+./easyrsa build-server-full www.test.rece nopass
+./easyrsa build-server-full staff.test.rece nopass
+
+./easyrsa build-client-full client1.test.rece nopass
+./easyrsa build-client-full client2.test.rece nopass
+
+mkdir ~/test.rece/
+cp pki/ca.crt ~/test.rece/
+cp pki/issued/www.test.rece.crt ~/test.rece/
+cp pki/private/www.test.rece.key ~/test.rece/
+
+cp pki/issued/staff.test.rece.crt ~/test.rece/
+cp pki/private/staff.test.rece.key ~/test.rece/
+
+cp pki/issued/client1.test.rece.crt ~/test.rece
+cp pki/private/client1.test.rece.key ~/test.rece/
+
+cp pki/issued/client2.test.rece.crt ~/test.rece
+cp pki/private/client2.test.rece.key ~/test.rece/
+
+cd ~/test.rece/
+
