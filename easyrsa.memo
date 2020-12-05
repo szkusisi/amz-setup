@@ -1,6 +1,7 @@
 DOMAIN=aiocr.de
 
 # Download
+cd ~/
 git clone https://github.com/OpenVPN/easy-rsa.git
 
 # 証明書作成
