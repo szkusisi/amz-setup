@@ -1,3 +1,4 @@
+```
 <Virtualhost *:443>
 DocumentRoot /var/www/html/www.test.rece
 ServerName www.test.rece
@@ -22,5 +23,6 @@ SSLCertificateFile /etc/pki/tls/private/staff.test.rece.crt
 SSLCertificateKeyFile /etc/pki/tls/private/staff.test.rece.key
 SSLCACertificateFile /etc/pki/tls/private/ca.crt
 </VirtualHost>
+```
 
 
