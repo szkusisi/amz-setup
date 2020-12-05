@@ -9,6 +9,9 @@ cd easy-rsa/easyrsa3
 ./easyrsa build-client-full client1.test.rece nopass
 ./easyrsa build-client-full client2.test.rece nopass
 
+./easyrsa gen-crl
+
+
 mkdir ~/test.rece/
 cp pki/ca.crt ~/test.rece/
 cp pki/issued/www.test.rece.crt ~/test.rece/
@@ -22,6 +25,8 @@ cp pki/private/client1.test.rece.key ~/test.rece/
 
 cp pki/issued/client2.test.rece.crt ~/test.rece
 cp pki/private/client2.test.rece.key ~/test.rece/
+
+cp pki/crl.pem ~/aiocr.de/
 
 cd ~/test.rece/
 
