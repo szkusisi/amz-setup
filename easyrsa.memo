@@ -1,8 +1,12 @@
-DOMAIN=
+DOMAIN=aiocr.de
 
+# Download
 git clone https://github.com/OpenVPN/easy-rsa.git
+
+# 証明書作成
 cd easy-rsa/easyrsa3
 ./easyrsa init-pki
+
 ./easyrsa build-ca nopass
 
 ./easyrsa build-server-full www.$DOMAIN nopass
