@@ -51,6 +51,8 @@ cp pki/issued/client2.aiocr.de.crt ~/aiocr.de
 cp pki/private/client2.aiocr.de.key ~/aiocr.de/
 
 cd ~/aiocr.de/
+openssl pkcs12 -export -inkey client1.aiocr.de.key -in client1.aiocr.de.crt -out client1.aiocr.de.pfx
+openssl pkcs12 -export -inkey client2.aiocr.de.key -in client2.aiocr.de.crt -out client2.aiocr.de.pfx
 
 
 

@@ -5,14 +5,8 @@ sudo timedatectl set-timezone Asia/Tokyo
 
 
 sudo yum install -y httpd mod_ssl
-# Apache ConfのServerName変更
-# エラーでるため
-
-# /etc/httpd/conf/httpd.conf
-# ～～～～～～～～～～～～～～～～～～～～～
-#ServerName www.example.com:80
-#  ～～～～～～～～～～～～～～～～～～～～～
-
+sudo cp /etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf.org
+sudo sed -i "s/#ServerName www.example.com:80/ServerName localhost:80/g" /etc/httpd/conf/httpd.conf
 
 
 # Virtualhost
