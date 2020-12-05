@@ -1,3 +1,4 @@
+```
 NameVirtualHost server.example.com:443
 <VirtualHost server.example.com:443>
         ServerName server.example.com
@@ -34,12 +35,14 @@ NameVirtualHost server.example.com:443
         </Location>
 
 </VirtualHost>
+```
 
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 
 http://www.t2.ucsd.edu/twiki2/pub/UCSDTier2/WebAuthentication/ssl.conf
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+```
+
 LoadModule ssl_module modules/mod_ssl.so
 Listen 443
 AddType application/x-x509-ca-cert .crt
@@ -152,4 +155,6 @@ ProxyPreserveHost on
   RewriteLog "/etc/httpd/logs/rewrite.log"
   RewriteLogLevel 10
 
-</VirtualHost>                                  
+</VirtualHost>
+```
+
