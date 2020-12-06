@@ -1,3 +1,9 @@
+#認証局証明書 cacert.pem /etc/pki/tls/certs/
+#サーバ証明書 apache.crt /etc/pki/tls/certs/
+#サーバ秘密鍵 apache.key /etc/pki/tls/private/
+#証明書失効リスト crl_ia1.pem /etc/pki/CA/crl/
+
+
 DOMAIN=aiocr.de
 
 # Download
