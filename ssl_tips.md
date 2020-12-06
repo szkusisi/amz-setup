@@ -47,3 +47,15 @@ http://httpd.apache.org/docs/2.4/expr.html
     Redirect permanent "/" "https://google.com"
 </If>
 
+
+
+https://python5.com/q/hooeouac
+if ($ssl_client_verify = FAILED) {
+        return 495;
+}
+if ($ssl_client_verify = NONE) {
+    return 402;
+}
+if ($ssl_client_verify != SUCCESS) {
+    return 403;
+}
