@@ -8,7 +8,7 @@ sudo yum install -y httpd mod_ssl
 sudo cp /etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf.org
 sudo sed -i "s/#ServerName www.example.com:80/ServerName localhost:80/g" /etc/httpd/conf/httpd.conf
 
-
+# Log X-forword-For
 # Virtualhost
 # SSL
 
