@@ -38,3 +38,12 @@ SSL_CLIENT_VERIFY: SUCCESS
 
 NGINXだけど、参考例
 https://www.harumaki.net/2018/03/23/nginx-ssl-client-cert-and-access-control/
+
+
+
+
+http://httpd.apache.org/docs/2.4/expr.html
+<If "%{SSL_CLIENT_VERIFY} != 'SUCCESS'">
+    Redirect permanent "/" "https://google.com"
+</If>
+
