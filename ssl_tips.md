@@ -20,3 +20,21 @@ RequestHeader set SSL_CLIENT_VERIFY "%{SSL_CLIENT_VERIFY}s"
 上記動かなかったら以下を参照
 https://terazzo.hatenadiary.org/entry/20120423/1335133206
 
+
+
+ヘッダー
+クライアント認証なし
+==================
+X-Client-Cert: (null)
+SSL_CLIENT_VERIFY: NONE
+==================
+
+クライアント認証あり
+==================
+X-Client-Cert: -----BEGIN CERTIFICATE----- MIIDTjCCAjag～割愛～0ig== -----END CERTIFICATE-----
+SSL_CLIENT_VERIFY: SUCCESS
+==================
+
+
+NGINXだけど、参考例
+https://www.harumaki.net/2018/03/23/nginx-ssl-client-cert-and-access-control/
