@@ -1,7 +1,6 @@
 cd /etc/httpd/conf.d
 sudo tee ap1.conf <<EOF
 Listen 8881
-NameVirtualHost *:8881
 <VirtualHost *:8881>
 DocumentRoot /var/www/html/ap1
 ServerName ap1

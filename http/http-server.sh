@@ -1,4 +1,4 @@
-HOSTNAME=test-www
+HOSTNAME=www
 
 sudo hostnamectl set-hostname $HOSTNAME
 sudo timedatectl set-timezone Asia/Tokyo

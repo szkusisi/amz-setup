@@ -1,7 +1,6 @@
 cd /etc/httpd/conf.d
 sudo tee ap2.conf <<EOF
 Listen 8882
-NameVirtualHost *:8882
 <VirtualHost *:8882>
 DocumentRoot /var/www/html/ap2
 ServerName ap2
