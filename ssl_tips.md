@@ -1,0 +1,22 @@
+RequestHeader set SSL_CLIENT_VERIFY "%{SSL_CLIENT_VERIFY}s"
+
+これの認証ステータスを確認して、認証してなら、リダイレクト
+
+
+<VirtualHost _default_:443>
+...
+  <Directory "/var/www/html_ssl">
+    Options -Indexes FollowSymLinks
+    AllowOverride All
+  </Directory>
+
+  SSLVerifyClient optional
+  SSLVerifyDepth 1
+</VirtualHost>
+
+
+
+
+上記動かなかったら以下を参照
+https://terazzo.hatenadiary.org/entry/20120423/1335133206
+
